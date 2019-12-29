@@ -121,6 +121,7 @@ module.exports = {
     alias: {
         'reset-css': path.join(__dirname, '/node_modules/reset-css/reset.css'),
         'md-css': path.join(__dirname, '/node_modules/github-markdown-css/github-markdown.css'),
+        'hightlight-js': path.join(__dirname, '/node_modules/hightlight.js/'),
     },
     extensions: [".wasm", ".mjs", ".js", ".jsx", ".ts", ".tsx", ".json"]
   }  

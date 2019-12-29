@@ -127,7 +127,7 @@ vue에서 데이터 변화를 감시해주는 computed에서 typographyClass 함
 남은 일은 동적으로 바인딩 된 클래스에 스타일 속성을 부여하는 일입니다.
 이어서 다음 style 코드를 작성해보겠습니다. (먼저 scss를 사용하기 전에 npm install --save-dev node-sass sass-loader로 설치를 해주시기 바랍니다.)
 
-```scss
+```css
 <style lang="scss">
 // Font colors
 @import '../../../assets/scss/color.scss';
@@ -205,7 +205,7 @@ computed의 typographyColor 값을 typographyClass와 동일한 방법으로 p �
 마찬가지로 gray 프로퍼티를 넘겨주면 클래스에 gray 문자열이 바인딩 되고 blue 프로터피를 넘겨주면 클래스에 blue 문자열이 바인딩 됩니다.
 그러면 다음으로 scss를 작성함으로써 해당되는 클래스 선택자에 스타일 속성을 부여해주면 되겠죠?
 
-```scss
+```css
   .gray {
     color: $gray;
   }
