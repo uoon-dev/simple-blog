@@ -1,8 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap);
+/* @import '~reset-css'; */
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Roboto Slab", serif;
+  font-family: "Nanum Gothic", serif;
   color: #333333;
 }
 
@@ -13,7 +16,7 @@ h4,
 h5,
 h6,
 time {
-  font-family: "Ruda", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 svg {
@@ -43,6 +46,8 @@ svg {
 
 .container header {
   margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid 3px #cecece;
 }
 
 .container header h1 {
@@ -63,6 +68,10 @@ svg {
 
 .container header ul li {
   margin-left: 1em;
+}
+
+.container header ul li i svg {
+  width: 20px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -94,7 +103,7 @@ svg {
 }
 
 .nav a span {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .nav a.nav-link-active {
@@ -108,7 +117,7 @@ svg {
 .container main {
   flex: 1 0 0;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
 }
 
 .container main section#home ul {
@@ -234,7 +243,7 @@ width: 100%;
   align-items: center;
   border: 1px solid #d3d6db;
   border-radius: 3px;
-  color: #666666
+  color: #666666;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -253,7 +262,7 @@ width: 100%;
 
 .meta-aside, .container main section#home ul li aside, .container main article aside {
   margin: 0.5em 0;
-  font-family: "Ruda", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   color: #909090;
   font-size: 0.8em;
 }
@@ -295,12 +304,12 @@ a {
   }
 }
 
-.mid-image, figure.mid img, img[src*="mid"] {
+/* .mid-image, figure.mid img, img[src*="mid"] {
   width: 100%;
   box-shadow: 0 3px 3px #bbbbbb;
-}
+} */
 
-@supports (width: 100vw) {
+/* @supports (width: 100vw) {
   .mid-image, figure.mid img, img[src*="mid"] {
     width: 800px;
     position: relative;
@@ -317,7 +326,7 @@ a {
       margin: 0;
     }
   }
-}
+} */
 
 .float-image, figure.float img, img[src*="float"] {
   width: 300px;
@@ -401,7 +410,7 @@ blockquote {
 
 blockquote::before {
   content: "\f10d";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Nanum Gothic", sans-serif;
   font-weight: 900;
   font-size: 3em;
   color: rgba(192, 192, 192, 0.3);
@@ -432,3 +441,4 @@ ul.pagination {
 ul.pagination li {
   padding: 0 1em;
 }
+

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "html-includes --src src --dest dist",
+    "build": "webpack",
+    "dev": "webpack-dev-server --progress --hot --inline"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,37 @@
   "bugs": {
     "url": "https://github.com/uoon-dev/simple-blog/issues"
   },
-  "homepage": "https://github.com/uoon-dev/simple-blog#readme"
+  "homepage": "https://github.com/uoon-dev/simple-blog#readme",
+  "dependencies": {
+    "github-markdown-css": "^3.0.1",
+    "highlight.js": "^9.17.1",
+    "html-includes": "^4.2.0",
+    "install": "^0.13.0",
+    "npm": "^6.13.4",
+    "reset-css": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.5",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.0",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
+    "file-loader": "^5.0.2",
+    "fs": "0.0.1-security",
+    "highlight-loader": "^0.7.3",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "lite-server": "^2.5.4",
+    "markdown-loader": "^5.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.1.2",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-fix-style-only-entries": "^0.4.0"
+  }
 }
