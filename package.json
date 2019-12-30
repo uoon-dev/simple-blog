@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "html-includes --src src --dest dist",
-    "build": "webpack",
-    "dev": "webpack-dev-server --progress --hot --inline"
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js --progress --hot --inline",
+    "dev": "webpack --config webpack.dev.js --watch"
   },
   "repository": {
     "type": "git",

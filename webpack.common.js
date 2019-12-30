@@ -2,18 +2,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const fs = require('fs');
 const path = require('path');
 const distDir = path.resolve(__dirname, 'app/dist');
 const srcDir = path.resolve(__dirname, 'app/src');
-const highlight = require('highlight.js');
-// const marked = require("marked");
-// marked.setOptions({
-//     highlight: function(code) {
-//         return highlight.highlightAuto(code).value;
-//     }
-// });
-// const renderer = new marked.Renderer();
 
 module.exports = {
   entry: { 
@@ -26,13 +17,6 @@ module.exports = {
   output: {
     path: distDir,
     filename: '[name].js'
-  },
-  devServer: {
-    contentBase: distDir + '/html',
-    inline: true,
-    hot: true,
-    compress: true,
-    port: 9000
   },
   watch: true,
   module: {
@@ -68,15 +52,8 @@ module.exports = {
             {
                 loader: "html-loader"
             },
-            // {
-            //     loader: "highlight-loader"
-            // },
             {
                 loader: "markdown-loader",
-                options: {
-                  // pedantic: true,
-                  // renderer
-                }
             },            
         ]
       },
