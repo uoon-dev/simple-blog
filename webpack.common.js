@@ -8,8 +8,8 @@ const srcDir = path.resolve(__dirname, 'app/src');
 
 module.exports = {
   entry: { 
-    'html/post/01/common': path.resolve(srcDir, 'html/post/01/common.js'),
-    'html/post/01/style': path.resolve(srcDir, 'html/post/01/style.css'),
+    'post/01/common': path.resolve(srcDir, 'post/01/common.js'),
+    'post/01/style': path.resolve(srcDir, 'post/01/style.css'),
 
     'css/main': path.resolve(srcDir, 'css/main.css'),
     'js/main': path.resolve(srcDir, 'js/main.js')
@@ -76,21 +76,20 @@ module.exports = {
   plugins: [    
     new HtmlWebpackPlugin({
       inject: false,
-      template: path.resolve(srcDir, 'html/main.html'),
-      filename: 'html/index.html'
+      template: path.resolve(srcDir, 'main.html'),
+      filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: path.resolve(srcDir, 'html/post/01/how-to-optimize-font-in-vue.html'),
-      filename: 'html/post/01/how-to-optimize-font-in-vue.html'
+      template: path.resolve(srcDir, 'post/01/how-to-optimize-font-in-vue.html'),
+      filename: 'post/01/how-to-optimize-font-in-vue.html'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
     }),
     new FixStyleOnlyEntriesPlugin(),
     new CopyWebpackPlugin([
-      // { from: path.resolve(srcDir, 'html/post/01/how-to-optimize-font-in-vue.html'), to: distDir + '/html/post/01/how-to-optimize-font-in-vue.html'}
-      { from: path.resolve(srcDir, 'img'), to: distDir + '/img/' }
+      { from: path.resolve(srcDir, 'img'), to: distDir + '/img/' },
     ])
   ],
   resolve: {

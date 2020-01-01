@@ -1,0 +1,19 @@
+@import '~md-css';
+
+.markdown-body {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    font-family: 'Noto Sans KR', serif;
+}
+
+@media (max-width: 800px) {
+    .container .markdown-body {
+        padding: 0 15px 15px 15px;
+    }
+
+    .container .markdown-body p {
+        font-size: 0.8rem;
+      }
+}

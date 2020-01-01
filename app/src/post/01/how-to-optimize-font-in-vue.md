@@ -20,7 +20,8 @@
 
 저는 먼저 [vue init vuetifyjs/nuxt <project-name>] 커맨드를 통해 nuxt 템플릿 세팅을 완료했습니다.
 
-![](../../../img/folder-structure-01.png)
+![]("../../img/folder-structure-01.png")
+<!-- [<img src="../../img/folder-structure-01.png">] -->
 
 (컴포넌트 만드는 방법은 동일하기 때문에 굳이 nuxt를 쓰지 않고 일반 spa vue 템플릿을 사용하셔도 됩니다. 저는 회사에서 nuxt + vuetify 조합을 사용하기 때문에 편의상 동일한 환경에서 진행하겠습니다. )
 
@@ -241,7 +242,7 @@ export default {
 
 최종 결과물은 다음과 같습니다.
 
-![](../../../img/typography.gif)
+![]("../../img/typography.gif")
 
 
 

@@ -21,6 +21,9 @@ const phase1 = merge.smartStrategy({plugins: 'prepend'})(common, {
 
 module.exports = merge(phase1, {
   optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
     minimizer: [
       new TerserPlugin({
         cache: true,
